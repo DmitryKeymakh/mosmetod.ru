@@ -1,0 +1,117 @@
+.tizer-block-hide {
+  display: none;
+}
+
+.tizer-block {
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.tizer-block__col {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-preferred-size: 0;
+  -webkit-flex-basis: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.tizer-block__banner {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  max-width: 284px;
+  height: 306px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+}
+
+.tizer-block__banner:empty {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .tizer-block__banner {
+    height: 285px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .tizer-block__banner {
+    height: 285px;
+  }
+}
+
+@media screen and (max-width: 1134px) {
+  .tizer-block__banner {
+    height: 285px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tizer-block__banner {
+    height: 264px;
+  }
+  .tizer-block__banner:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .tizer-block__banner {
+    height: 264px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tizer-block__banner {
+    height: 264px;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .tizer-block__banner {
+    min-width: 235px;
+    height: 240px;
+  }
+  .tizer-block__banner:last-child {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .tizer-block__banner {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .tizer-block__banner {
+    height: 240px;
+  }
+  .tizer-block {
+    display: none;
+  }
+}

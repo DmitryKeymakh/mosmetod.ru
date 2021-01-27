@@ -1,0 +1,31 @@
+@import "../../../styles/variables/colors";
+
+
+.header-mobile {
+  background-color: $white;
+  position: fixed;
+  //position: sticky;
+  //top: 0;
+  width: 100%;
+  z-index: 1300;
+  border-bottom: 1px solid $grey-footer;
+  box-shadow: inset 0px -1px 10px rgba(0, 0, 0, 0.1);
+  &-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 80px;
+  }
+}
+
+.logo-mobile {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.search-burger-container {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  display: flex;
+  justify-content: flex-end;
+}

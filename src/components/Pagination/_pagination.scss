@@ -1,0 +1,102 @@
+@import "../../styles/variables/colors";
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  &-wrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  & li {
+    display: block;
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.87rem;
+    line-height: 1rem;
+    color: $black;
+    border: 1px solid transparent;
+    user-select: none;
+    & a {
+      display: block;
+      padding: 10px;
+      &:hover, &:active, &:focus {
+        cursor: pointer;
+      }
+    }
+  }
+  & .previous, & .next, & .active {
+    background: #F9F9F9;
+    border: 1px solid #F1F1F1;
+    border-radius: 3px;
+    position: relative;
+  }
+  & .previous {
+    padding-left: 15px;
+    & a:before {
+      content: '';
+      position: absolute;
+      top: 13px;
+      left: 9px;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-right: 5px solid rgba(0, 0, 0, 0.54);
+    }
+  }
+  & .next {
+    padding-right: 15px;
+    margin-right: 0;
+    & a:after {
+      content: '';
+      position: absolute;
+      top: 13px;
+      right: 9px;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid rgba(0, 0, 0, 0.54);
+    }
+  }
+  &-quantity {
+    &-block {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-column-gap: 10px;
+      align-items: center;
+      & .active-quantity {
+        padding: 10px;
+        background: #F9F9F9;
+        border: 1px solid #F1F1F1;
+        border-radius: 3px;
+      }
+    }
+    &-text, &-button {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.87rem;
+      line-height: 1rem;
+      color: $black;
+      user-select: none;
+    }
+    &-text {
+      padding-right: 10px;
+    }
+    &-button {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.87rem;
+      line-height: 1rem;
+      padding: 10px;
+      color: $black;
+      border: 1px solid transparent;
+      user-select: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

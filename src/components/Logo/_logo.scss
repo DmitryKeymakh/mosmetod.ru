@@ -1,0 +1,29 @@
+@import "../../styles/variables/colors";
+
+.logo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  user-select: none;
+  height: 100%;
+  width: fit-content;
+  font-size: 1.1rem;
+  &-title {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.15px;
+    font-weight: 200;
+    color: $black;
+  }
+  &-description {
+    margin-left: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: $black;
+    margin-top: 4px;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}

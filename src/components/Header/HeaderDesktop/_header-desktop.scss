@@ -1,0 +1,40 @@
+@import "../../../styles/variables/colors";
+
+
+.header {
+  background-color: $white;
+  position: fixed;
+  //position: sticky;
+  //top: 0;
+  width: 100%;
+  z-index: 111;
+  &-container {
+    //width: 100%;
+    margin: 0 auto;
+    //padding-bottom: 5px;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 65px 30px;
+  }
+}
+
+.logo-desktop {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.dropdown-profile {
+  grid-column-start: 9;
+  grid-column-end: 10;
+}
+
+.menu {
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+
+.search-header-desktop-wrap {
+  grid-column-start: 9;
+  grid-column-end: 10;
+}

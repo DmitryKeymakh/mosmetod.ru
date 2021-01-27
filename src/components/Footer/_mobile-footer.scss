@@ -1,0 +1,55 @@
+@import "../../styles/variables/_colors";
+
+.mobile-footer {
+  padding-left: 1rem;
+  border-top: 1px solid #E3E3E3;
+  padding-bottom: 10px;
+  &-menu-block {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  &-logo-block {
+    margin-bottom: 10px;
+  }
+}
+.mobile-logo-text-thin {
+  margin-top: 2px;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+  color: $grey-text;
+}
+.mobile-footer-social {
+  &-icons-block {
+    padding: 10px 0;
+    max-width: 200px;
+  }
+  &-icon {
+    &-youtube {
+      width: 24px;
+      height: 17px;
+      background: url("./icons/Vector-4.png");
+    }
+    &-vk {
+      width: 31px;
+      height: 17px;
+      background: url("./icons/Vector-5.png");
+    }
+    &-facebook {
+      width: 19px;
+      height: 18px;
+      background: url("./icons/Vector-6.png");
+    }
+    &-twitter {
+      width: 22px;
+      height: 17px;
+      background: url("./icons/Vector-7.png");
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .mobile-footer {
+    padding-left: 1rem;
+  }
+}

@@ -1,0 +1,118 @@
+@import "../../../../styles/variables/_colors.scss";
+
+
+.our-projects-item-wrap {
+  box-sizing: border-box;
+}
+
+.our-projects-block-wrap {
+  margin: 0 -10px;
+}
+
+.our-projects-block-wrap .slick-slide {
+  //max-width: 305px;
+}
+
+.our-projects-item {
+  -webkit-user-drag: none;
+  display: grid;
+  grid-template-rows: 180px 150px;
+  margin: 0 10px 10px 10px;
+  border-radius: 3px;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.15), -3px 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.our-projects-page-item {
+  -webkit-user-drag: none;
+  display: grid;
+  grid-template-rows: 180px 150px;
+  border-radius: 3px;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.15), -3px 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.our-projects-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 10px;
+  border: solid $grey-border;
+  border-width: 1px 1px 0 1px;
+  border-radius: 3px 3px 0 0;
+}
+
+.our-projects-logo {
+  margin: 0 auto;
+  height: 50px;
+  object-fit: contain;
+}
+
+.our-projects-title {
+  font-weight: 300;
+  font-size: 1.3rem;
+  letter-spacing: 0.15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+
+.archive {
+  filter: grayscale(100%);
+}
+
+.slick-list {
+   //padding: 0 20% 0 0!important;
+ }
+
+.projects-carousel-dot button:before {
+  font-size: 3rem!important;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1920px) {
+}
+
+@media (max-width: 1380px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1080px) {
+}
+
+@media (max-width: 768px) {
+  .our-projects-block-wrap {
+    margin: inherit;
+  }
+}
+
+@media (max-width: 550px) {
+  .projects-carousel-dot button:before {
+    font-size: 1rem!important;
+  }
+
+  .projects-carousel-dot li {
+    margin: 0!important;
+  }
+}
+
+@media (max-width: 350px) {
+}
+
+@media (min-width: 1080px) {
+  .our-projects-item,
+  .our-projects-page-item {
+    transition: all 0.2s;
+    &:hover {
+      box-shadow: none;
+    }
+    &:active .our-projects-wrap {
+      background-color: $grey-footer;
+    }
+    &:active .our-projects-title-wrap {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,208 @@
+[
+  {
+    "title": "Главная",
+    "key": "main",
+    "url": "/",
+    "dropdownMenu": []
+  },
+  {
+    "title": "Лента",
+    "key": "news-feed",
+    "url": "/news-feed",
+    "dropdownMenu": []
+  },
+  {
+    "title": "Проекты",
+    "key": "projects",
+    "url": "/projects",
+    "dropdownMenu": []
+  },
+  {
+    "title": "Методическое пространство",
+    "key": "teaching-space",
+    "url": "/teaching-space",
+    "dropdownMenu": [
+      {
+        "title": "Последнее добавленное",
+        "key": 1,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Дошкольное образование",
+        "key": 2,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Начальное образование",
+        "key": 3,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Основное и среднее образование",
+        "key": 4,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Дополнительное образование",
+        "key": 5,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Робототехника",
+        "key": 6,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Молодым специалистам",
+        "key": 7,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Воспитательная работа",
+        "key": 8,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Профилактика негативных проявлений",
+        "key": 9,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Профилактика детского травматизма",
+        "key": 10,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Информационно-библиотечное обеспечение",
+        "key": 11,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Дополнительное профессиональное образование",
+        "key": 12,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Классный час",
+        "key": 13,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Учебно-методическое обеспечение",
+        "key": 14,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Проектный офис «Предпрофессиональное образование»",
+        "key": 15,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Школа для всех",
+        "key": 16,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Информатизация",
+        "key": 17,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Урок в музее",
+        "key": 18,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Новости СПО",
+        "key": 19,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Информация о модераторах",
+        "key": 20,
+        "url": "/section-in-development"
+      }
+    ]
+  },
+  {
+    "title": "Документы",
+    "key": "documents",
+    "url": "/documents",
+    "dropdownMenu": []
+  },
+  {
+    "title": "О центре",
+    "key": "about-the-center",
+    "url": "/about-the-center",
+    "dropdownMenu": [
+      {
+        "title": "Сведения об образовательной организации",
+        "key": 1,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Учредительные документы",
+        "key": 2,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Финансовые документы",
+        "key": 3,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Материально-техническое обеспечение",
+        "key": 4,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Документы о предоставлении платных образовательных услуг",
+        "key": 5,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Предписания",
+        "key": 6,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Дополнительное образование",
+        "key": 7,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Персональный состав педагогических работников",
+        "key": 8,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Специальная оценка условий труда",
+        "key": 9,
+        "url": "/section-in-development"
+      },
+      {
+        "title": "Коллективный договор",
+        "key": 10,
+        "url": "/section-in-development"
+      }
+    ]
+  },
+  {
+    "title": "План работы",
+    "key": "work-plan",
+    "url": "/work-plan",
+    "dropdownMenu": []
+  },
+  {
+    "title": "Контакты",
+    "key": "contacts",
+    "url": "/contacts",
+    "dropdownMenu": []
+  },
+  {
+    "title": "Курсы ПК",
+    "key": "courses",
+    "url": "/courses",
+    "dropdownMenu": []
+  }
+]

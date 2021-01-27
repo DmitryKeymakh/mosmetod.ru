@@ -1,0 +1,104 @@
+@import "../../../../styles/variables/colors";
+
+
+@keyframes menu-competition-link {
+  from {
+    color: $cornflowerblue;
+  }
+  to {
+    color: $cornflowerblue;
+  }
+  25% {
+    color: #3d85bb;
+  }
+  50% {
+    color: #3c5d69;
+  }
+  75% {
+    color: #e25e10;
+  }
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $grey-header-border;
+  &-list-item{
+    list-style-type: none;
+    display: table;
+    border-collapse:collapse;
+    color: $grey-text;
+    font-size: 0.9rem;
+    width: fit-content;
+    height: 100%;
+    user-select: none;
+    transition: all .3s;
+    &:hover{
+      cursor: pointer;
+      color: $black;
+    }
+  }
+  &-list-link{
+    display: table-cell;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: inherit;
+    height: 100%;
+    &-active{
+      color: $black;
+      border-bottom: 1px solid $black;
+    }
+  }
+}
+
+.menu-competition-link {
+  animation-name: menu-competition-link;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.dropdown-menu-wrap{
+  margin: 0 auto;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  cursor: default;
+  height: fit-content;
+  padding: 1px;
+  border-radius: 0 0 5px 5px;
+  background: white linear-gradient(to top, #b5b3b3, rgba(0, 0, 0, 0));
+}
+
+.dropdown-menu{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  padding: 2rem;
+  background-color: $white;
+  border-radius: 0 0 4px 4px;
+  &-item{
+    display: grid;
+    align-self: start;
+    font-size: 0.9rem;
+    line-height: 16px;
+    letter-spacing: 0.15px;
+    color: $grey-text;
+    transition: all .3s;
+    &:hover{
+      cursor: pointer;
+      color: $black;
+    }
+  }
+}
+

@@ -1,0 +1,221 @@
+@import "../../../styles/variables/colors";
+
+
+.projects-page {
+  padding-bottom: 20px;
+}
+
+.projects-page-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.projects-page-live-search {
+  height: 43px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 15%;
+  grid-column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.projects-page-form {
+  display: grid;
+  align-self: center;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 20px;
+  border-bottom: 1px solid #BFBFBF;
+  width: 100%;
+}
+
+.projects-page-form-input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  line-height: 38px;
+  color: $grey-text;
+  &::placeholder {
+    user-select: none;
+    font-size: 22px;
+    line-height: 26px;
+    color: $placeholder;
+  }
+  &:focus::placeholder {
+    color: $grey-border;
+  }
+  &-submit {
+    user-select: none;
+    width: fit-content;
+    border: none;
+    color: $blue-text;
+    background-color: $white;
+    font-size: 20px;
+    line-height: 38px;
+    transition: color 0.2s;
+    &:hover {
+      cursor: pointer;
+      color: $black;
+    }
+  }
+}
+
+.projects-page-filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.control-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  color: $black;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  letter-spacing: 0.15px;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control_indicator {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #ffffff;
+  border: none;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: #ffffff;
+}
+
+.control input:checked ~ .control_indicator {
+  background: #ffffff;
+}
+
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+  background: #ffffff;
+}
+
+.control input:disabled ~ .control_indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+
+.control-checkbox {
+  user-select: none;
+}
+
+.control-checkbox .control_indicator:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #757575;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled ~ .control_indicator:after {
+  border-color: #7b7b7b;
+}
+
+.projects-item {
+  animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1920px) {
+}
+
+@media (max-width: 1380px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1080px) {
+  .projects-page-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1030px) {
+  .control_indicator {
+    //top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-page-live-search {
+    grid-template-columns: 1fr 25%;
+  }
+
+  .projects-page-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 673px) {
+  .control_indicator {
+    //top: 19px;
+  }
+}
+
+@media (max-width: 550px) {
+  .projects-page-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .control-checkbox {
+    user-select: none;
+    font-size: 0.7rem;
+  }
+
+  .control_indicator {
+    top: 7px;
+  }
+}
+
+@media (max-width: 350px) {
+}

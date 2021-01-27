@@ -1,0 +1,53 @@
+@import "../../../../styles/variables/colors";
+
+
+.search-mobile {
+
+  &-icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    //fill: $grey-text;
+    padding: 0 10px;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+  }
+  &-dropdown-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    //overflow: hidden;
+    background-color: $white;
+    border-bottom: 1px solid $grey-footer;
+    box-shadow: inset 0px -1px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 1080px) {
+  .search-mobile {
+
+    &-icon {
+      transition: fill 0.2s;
+
+      &:hover {
+        cursor: pointer;
+        //fill: $black;
+        fill: $grey-text;
+      }
+    }
+  }
+}
+
