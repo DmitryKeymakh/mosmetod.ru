@@ -1,4 +1,4 @@
-const domain = 'http://new.mosmetod.ru';
+const domain = 'https://mosmetod.ru/';
 // const domain = '';
 
 const api = {
